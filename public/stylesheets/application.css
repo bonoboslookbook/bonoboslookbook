@@ -1,0 +1,15 @@
+img {
+  max-width: 100%;
+}
+
+#most-recent-image img {
+  width: 612px;
+}
+
+#most-recent-image {
+  margin-bottom: 5px;
+}
+
+#logo {
+  width: 612px
+}

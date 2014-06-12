@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title Bonobos Lookbook
+    %script{src: 'javascripts/jquery-2.1.1.min.js'}
+    %script{src: 'javascripts/lightbox.min.js'}
+    %script{src: 'javascripts/mustache.min.js'}
+    %script{src: 'javascripts/jquery.mustache.min.js'}
+    %script{src: 'javascripts/application.js'}
+    %link{type: 'text/css', rel: 'stylesheet', href: 'stylesheets/bootstrap.css'}
+    %link{type: 'text/css', rel: 'stylesheet', href: 'stylesheets/lightbox.css'}
+    %link{type: 'text/css', rel: 'stylesheet', href: 'stylesheets/application.css'}
+    %link{type: 'text/css', rel: 'stylesheet', href: 'stylesheets/bootstrap.css'}
+    %meta{name: 'viewport', content: 'width=device-width', 'initial-scale' => '1'}
+  %body
+    .container
+      .row
+        .col-md-8.col-md-offset-2.text-center
+          %a{href: '/'}
+            %img#logo{src: 'img/logo.jpg'}
+          #most-recent-image
+          #images
+          #ajax-loader
+            %img{src: 'img/ajax-loader.gif'}
+
+  :javascript
+    $(function() { App.start(); });
